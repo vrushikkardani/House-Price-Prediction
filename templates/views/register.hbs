@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{>header}}
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+  {{>navbar}}
+  <br>
+  <br>
+  <!-- main header -->
+  <div class="container">
+    <div class="title">Registration</div>
+    <br>
+    <div class="content">
+      <form action="/register" method="POST">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter your name" name="firstname" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your username" name="lastname"  required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" name="phonenumber" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" name="password" required>
+          </div>
+          <br>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" name="confirmpassword" required>
+          </div>
+          <br>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- footer code -->
+  {{>footer}}
+</body>
+
+</html>

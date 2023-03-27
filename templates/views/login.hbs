@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    {{>header}}
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="center">
+        <h1>Login</h1>
+        <form method="post" action="/login">
+            <div class="txt_field">
+                <input type="email" name="email"required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" name="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <button class="btn1 btn-lg btn-primary btn-block" type="submit">Log In</button>
+            <div class="signup_link">
+                Not a member? <a href="#">Signup</a>
+            </div>
+        </form>
+    </div>
+    {{>footer}}
+</body>
+
+</html>
